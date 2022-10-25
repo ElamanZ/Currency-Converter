@@ -13,8 +13,7 @@ const convert = (elem, target1, target2) => {
             if (elem === som) {
                 target1.value = (elem.value / response.usd).toFixed(2)
                 target2.value = (elem.value / response.eur).toFixed(2)
-            }
-            else if (elem === usd) {
+            }else if (elem === usd) {
                 target1.value = (elem.value * response.usd).toFixed(2)
                 target2.value = (elem.value * response.eur2).toFixed(2)
             } else if (elem === eur) {
