@@ -11,8 +11,8 @@ const convert = (elem, target1, target2) => {
         request.addEventListener("load", () => {
             const response = JSON.parse(request.response)
             if (elem === som) {
-                elem.value = (elem.value / response.usd).toFixed(2)
-                elem.value = (elem.value / response.eur).toFixed(2)
+                target1.value = (elem.value / response.usd).toFixed(2)
+                target2.value = (elem.value / response.eur).toFixed(2)
             }
             else if (elem === usd) {
                 target1.value = (elem.value * response.usd).toFixed(2)
